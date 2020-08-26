@@ -7,6 +7,6 @@ app
 .use(express.static('public'))
 .get('/', pageLanding )
 
-.listen(5500, () => {
+.listen(process.env.PORT || 5500, () => {
     console.log('app rodando em http://localhost:5500')
 })
